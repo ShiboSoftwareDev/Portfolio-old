@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;700&family=Croissant+One&family=Inknut+Antiqua:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:wght@400;700&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bacasime+Antique&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;700&family=Croissant+One&family=Inknut+Antiqua:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:wght@400;700&family=Merriweather:wght@400;700&family=Sofia&display=swap');
+
+* {
+    --about-clr: hsl(189, 96%, 39%);
+    --work-clr: hsl(189, 96%, 31%);
+    --contact-clr: hsl(189, 95%, 17%);
+    --title-clr: hsl(189, 100%, 51%);
+    
+    cursor: none;
+    font-family: Lora;
+}     
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #8fc7f1, #7173f5); */
+    background: var(--title-clr);
+    background-image: url("bg.png");
+    overflow: hidden;
+  }
+
+  main {
+    height: 100vh;
+    display: grid;
+    width: 100vw;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: 100%;
+  }
+
+  #main-title {
+    display: flex;
+  }
+
+  #refer {
+    box-sizing:border-box;
+    width: 2em;
+    height: 2em;
+    align-self: center;
+
+    border: 1px solid #0786F9;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(16, 0, 54, 0.2);
+  }
+
+  #title {
+    width: 200px;
+    /* flex-basis: 30%; */
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: Inknut Antiqua;
+    
+  }
+
+  #navbar {
+    right: 0px;
+    position: fixed;
+    display: grid;
+    font-size: 1.2rem;
+    align-items: center;
+    height: 10%;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: end;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 1fr;
+  }
+
+  .nav-link {
+    align-self: center;
+    justify-self: center;
+    /* flex-grow: 1; */
+  }
+
+  #nav-img {
+    align-self: center;
+    justify-self: center;
+    display: none;
+  }
+
+
+  #page-title-1 {
+    grid-row-start: 3;
+    text-align: center;
+  }
+
+  .page-1 {
+    display: block;
+  }
+
+  #page-title-2 {
+    grid-row-start: 3;
+    text-align: center;
+  }
+
+  .page-2 {
+    display: none;
+  }
+
+  #page-title-3 {
+    grid-row-start: 3;
+    text-align: center;
+    display: none;
+  }
+
+  .page-3 {
+    display: none;
+  }
+
+  #page-title-4 {
+    grid-row-start: 3;
+    text-align: center;
+    display: none;
+  }
+
+  .page-4 {
+    display: none;
+  }
+
+  #welcome-1 {
+    grid-row-start: 4;
+  }
+
+  #welcome-3 {
+    border: 1px solid #054DFD;
+    height: 0px;
+    grid-row-start: 6;
+    width: 60%;
+    justify-self: center;
+  }
+  #welcome-4 {
+    border: 1px solid #054DFD;
+    height: 0px;
+    grid-row-start: 7;
+    width: 40%;
+    justify-self: center;
+  }
+
+  #work-1 {
+    grid-row-start: 4;
+  }
+
+  #about-me-1 {
+    grid-row-start: 4;
+  }
+
+  #about-me-2 {
+    grid-row-start: 5;
+  }
+
+  #about-me-3 {
+    grid-row-start: 6;
+  }
+
+  #about-me-4 {
+    border: 1px solid #054DFD;
+    height: 0px;
+    grid-row-start: 7;
+    width: 60%;
+    justify-self: center;
+  }
+  #about-me-5 {
+    border: 1px solid #054DFD;
+    height: 0px;
+    grid-row-start: 8;
+    width: 40%;
+    justify-self: center;
+  }
+
+  #contact-1 {
+    grid-row-start: 4;
+    align-self: center;
+    justify-self: center;
+    background-image: url("GitHub-Logo.png");
+  }
+
+  #contact-2 {
+    grid-row-start: 5;
+    align-self: center;
+    justify-self: center;
+    background: none;
+  }
+
+  .contact-btn {
+    width: 100px;
+    height: 50px;
+    background: #4E9CAF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+  #welcome-2 {
+    grid-row-start: 5;
+  }
+
+  #projects {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 3px, auto, 3px;
+    grid-template-rows: 100%, 100%, 100%;
+  }
+
+  .project {
+    height: 98%;
+    width: 80vw;
+    grid-column-start: 2;
+    border: 2px solid #054DFD;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #next {
+    grid-column-start: 3;
+  }
+
+  #previous {
+    grid-column-start: 1;
+  }
+
+  .nav-btn {
+    background-color: #054DFD;
+    border: 1px solid blue;
+    border-radius: 15px;
+    height: 50px;
+    width: 5px;
+  }
+
+  #project-1 {
+    display: block;
+  }
+
+  #project-2, #project-3, #project-4 {
+    display: none;
+  }
+  
+  #work-1 {
+    grid-row-start: 4;
+    grid-row-end: 11;
+  }
+
+  .para {
+    text-align: center;
+  }
+  
+  #about {
+    font-weight: bold;
+    color: var(--about-clr);
+    text-shadow: grey 1px 0 10px;
+  }
+
+  #work {
+    font-weight: bold;
+    color: var(--work-clr);
+    text-shadow: grey 1px 0 10px;
+  }
+  
+  #contact {
+    font-weight: bold;
+    color: var(--contact-clr);
+    text-shadow: grey 1px 0 10px;
+  }
+
+  #follower {
+    transition: 0.125s ease-out;
+    border: 1px solid #054DFD;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(16, 0, 54, 0.2);
+  }
+  .followers {
+    top: -100px;
+    left: -100px;
+    box-sizing:border-box;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    transition: 0.1s ease-out;
+    pointer-events: none;
+  }
+
+ @media (max-width: 520px) {
+  .nav-link {
+    margin-top: 7px;
+    display: none;
+  }
+
+  #nav-img {
+    display: block;
+  }
+
+  #navbar {
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+    
+  }
+
+  body {
+    background-size: contain;
+  }
+
+} 
